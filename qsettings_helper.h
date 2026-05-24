@@ -9,7 +9,7 @@
 #include <QString>
 #include <QVariant>
 
-#include "templatedefines.h"
+#include "template_defines.h"
 
 /**
  * @brief Declarative QSettings serialization helpers.
