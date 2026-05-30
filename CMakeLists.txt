@@ -20,7 +20,9 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 # Usage:
 #   target_link_libraries(MyTarget PRIVATE QSettingsHelper::QSettingsHelper)
 # ──────────────────────────────────────────────────────────────────────────────
-add_library(QSettingsHelper INTERFACE)
+add_library(QSettingsHelper INTERFACE
+    qsettings_helper.h
+)
 add_library(QSettingsHelper::QSettingsHelper ALIAS QSettingsHelper)
 
 target_compile_features(QSettingsHelper INTERFACE cxx_std_20)
